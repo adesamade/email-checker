@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Email Checker </title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main class="container">
+        <div class="card">
+            <header class="header">
+                <h1>Email Checker</h1>
+                <p>Validate emails and open Gmail instantly</p>
+            </header>
+
+            <section class="section">
+                <label>Email Addresses</label>
+                <textarea id="emailInput"
+                    placeholder="email1@gmail.com, email2@gmail.com"></textarea>
+            </section>
+
+            <section class="stats">
+                <div class="stat">
+                    <span id="totalCount">0</span>
+                    <small>Total</small>
+                </div>
+                <div class="stat success">
+                    <span id="validCount">0</span>
+                    <small>Valid</small>
+                </div>
+                <div class="stat danger">
+                    <span id="invalidCount">0</span>
+                    <small>Invalid</small>
+                </div>
+            </section>
+
+            <section class="lists">
+                <div>
+                    <h3 class="success">✓ Valid Emails</h3>
+                    <ul id="validEmails"></ul>
+                </div>
+                <div>
+                    <h3 class="danger">✕ Invalid Emails</h3>
+                    <ul id="invalidEmails"></ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <input type="text" id="subject" placeholder="Email Subject" />
+            </section>
+
+            <section class="section">
+                <textarea id="body" rows="5"
+                    placeholder="Your message"></textarea>
+            </section>
+
+            <button id="sendBtn" disabled>Open Gmail</button>
+
+            <div id="status" class="status hidden"></div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,1 +1,1 @@
-# email-checker
+# email-sender-tool
